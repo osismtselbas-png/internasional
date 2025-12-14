@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  scroll-snap-type: y mandatory;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Slide section */
+.slide {
+  height: 100vh;
+  padding: 100px 50px;
+  scroll-snap-align: start;
+}
+
+/* Warna beda tiap slide */
+#home { background: #0a2540; color: white; }
+#tentang { background: #f4f4f4; }
+#program { background: #e8f0ff; }
+#struktur { background: #fdf2e9; }
+#galeri { background: #111; color: white; }
+#kontak { background: #0a2540; color: white; }
